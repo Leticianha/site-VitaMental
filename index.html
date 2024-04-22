@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4e1ef735b.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="img/logoFavicon.png" type="image/png">
+    <script src="main.js"></script>
     <title>VitaMental</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header id="header">
-        <div class="containerHeader">
+        <div class="containerHeader" id="Home">
             <div class="logo">
                 <img src="img/logo.png" alt="Logo VitaMental">
                 <h1>VitaMental</h1>
             </div>
             <div class="navegacao">
                 <nav id="nav">
-                    <a href="#">Home</a>
-                    <a href="#">Recursos</a>
-                    <a href="#">Sobre</a>
+                    <a href="#Home">Home</a>
+                    <a href="#Recurso">Recursos</a>
+                    <a href="#Sobre">Sobre</a>
+
                 </nav>
             </div>
         </div>
@@ -39,19 +41,18 @@
             <div class="imgBanner">
                 <img src="img/imgBanner.png" alt="Banner mulher montando quebra cabeça">
             </div>
-            <img src="img/fundoRadius.png" alt="Borda" class="radius">
             <div class="linhas">
                 <img src="img/linhasUm.png" alt="Linhas conectadas" class="linhaUm">
                 <img src="img/linhasDois.png" alt="Linhas conectadas" class="linhaDois">
             </div>
-            <div class="containerNumeracao">
+            <div class="containerNumeracao" id="Recurso">
                 <div class="circuloCinza">
                     <h1>1</h1>
                 </div>
             </div>
         </div>
         <!-- RECURSOS -->
-        <div class="containerRecursos">
+        <div class="containerRecursos" >
             <h1>Confira nossos recursos</h1>
             <div class="Recursos">
                 <div class="boxRecursos">
@@ -123,37 +124,37 @@
         <div class="Doencas">
             <div class="containerDoenca">
                 <div class="boxDoenca">
+                    <div class="imgDoenca">
+                        <h1>1</h1>
+                    </div>
                     <div class="tituloDoenca" style="background-color: #B38BDB;">
                         <h1>Alzheimer</h1>
                     </div>
-                    <div class="imgDoenca">
-                        <img src="img/iconeAlzheimer.png" alt="Cerebro">
-                    </div>
                 </div>
                 <div class="boxDoenca">
+                    <div class="imgDoenca">
+                        <h1>3</h1>
+                    </div>
                     <div class="tituloDoenca" style="background-color: #719257;">
                         <h1>Esquizofrenia</h1>
-                    </div>
-                    <div class="imgDoenca">
-                        <img src="img/iconeEsquizofrenia.png" alt="Cerebro">
                     </div>
                 </div>
             </div>
             <div class="containerDoenca">
                 <div class="boxDoenca">
+                    <div class="imgDoenca">
+                        <h1>2</h1>
+                    </div>
                     <div class="tituloDoenca" style="background-color: #7485BF;">
                         <h1>AVC</h1>
                     </div>
-                    <div class="imgDoenca">
-                        <img src="img/iconeAvc.png" alt="Cerebro">
-                    </div>
                 </div>
                 <div class="boxDoenca">
+                    <div class="imgDoenca">
+                        <h1>4</h1>
+                    </div>
                     <div class="tituloDoenca" style="background-color: #E1374C;">
                         <h1>Mal de Parkinson</h1>
-                    </div>
-                    <div class="imgDoenca">
-                        <img src="img/iconeMalParkison.png" alt="Cerebro" style="width: 35px;">
                     </div>
                 </div>
             </div>
@@ -174,7 +175,7 @@
                     </a>
                 </div>
                 <div class="img">
-                    <img src="img/ambulancia.png"
+                    <img src="img/psicologia 1.png"
                         alt="AmbulÂncia com uma enfermeira levando uma idosa que está na cadeira de rodas"
                         style="width: 500px;">
                 </div>
@@ -200,12 +201,11 @@
                     </div>
                 </div>
             </div>
-            <div class="containerNumeracaoDois">
+            <div class="containerNumeracaoDois" id="Sobre">
                 <div class="circuloCinza">
                     <h1>2</h1>
                 </div>
             </div>
-            <img src="img/fundoRadius.png" alt="Borda" class="radiusDois">
         </div>
     </main>
 
@@ -215,21 +215,24 @@
             <div class="infosFooter">
                 <div class="boxNavegacao">
                     <nav class="nav">
-                        <a href="#">Home</a>
-                        <a href="#">Recursos</a>
-                        <a href="#">Sobre</a>
-                        <a href="#">Fale conosco</a>
+                        <a href="#Home">Home</a>
+                        <a href="#Recurso">Recursos</a>
+                        <a href="#Sobre">Sobre</a>
+                        <a href="mailto:vitamentall@gmail.com?subject=Dúvidas%20e%20Comentários">Fale conosco</a>
                     </nav>
                     <div class="redeSociais">
                         <img src="img/iconeInstragram.png" alt="Icone do instragram">
                         <p>Web-design feito por VitaMental</p>
                     </div>
                 </div>
-                <div class="logoFooter">
-                    <img src="img/logo.png" alt="Logo VitaMental">
-                    <h1>VitaMental</h1>
-                </div>
+                <a href="#Home">
+                    <div class="logoFooter">
+
+                        <img src="img/logo.png" alt="Logo VitaMental">
+                        <h1>VitaMental</h1>
+                    </div>
             </div>
+            </a>
         </div>
     </footer>
 </body>
