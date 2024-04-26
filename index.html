@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4e1ef735b.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logoFavicon.png" type="image/png">
     <script src="main.js"></script>
-    <title>VitaMental</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -24,23 +23,38 @@
                     <a href="#Home">Home</a>
                     <a href="#Recurso">Recursos</a>
                     <a href="#Sobre">Sobre</a>
-
                 </nav>
+                <!-- Ícone do menu-bar -->
+                <div class="menu-bar" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Popup -->
+                <div class="popup" id="popup">
+                    <button class="close-btn" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <a href="#Home">Home</a>
+                    <a href="#Recurso">Recursos</a>
+                    <a href="#Sobre">Sobre</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- MAIN -->
     <main id="main">
         <!-- BANNER -->
         <div class="containerBanner">
-            <div class="textoBanner">
-                <h1>VITALIDADE É <span>FUNDAMENTAL</span></h1>
-                <p>Estimulando a mente, fortalecendo a vida!</p>
+            <div class="banner">
+                <div class="textoBanner">
+                    <h1>VITALIDADE É <br> <span>FUNDAMENTAL</span></h1>
+                    <p>Estimulando a mente, fortalecendo a vida!</p>
+                </div>
+                <div class="imgBanner">
+                    <img src="img/imgBanner.png" alt="Banner mulher montando quebra cabeça">
+                </div>
             </div>
-            <div class="imgBanner">
-                <img src="img/imgBanner.png" alt="Banner mulher montando quebra cabeça">
-            </div>
+
             <div class="linhas">
                 <img src="img/linhasUm.png" alt="Linhas conectadas" class="linhaUm">
                 <img src="img/linhasDois.png" alt="Linhas conectadas" class="linhaDois">
@@ -51,6 +65,7 @@
                 </div>
             </div>
         </div>
+
         <!-- RECURSOS -->
         <div class="containerRecursos">
             <h1>Confira nossos recursos</h1>
@@ -65,8 +80,7 @@
                             <img src="img/vetorJogos.png" alt="Icone de controle de video game">
                         </div>
                         <div class="divisao"></div>
-                        <p>Descubra jogos estimulantes adaptados para cada doença neurológica, promovendo diversão e
-                            bem-estar mental.</p>
+                        <p>Descubra jogos estimulantes adaptados para cada doença neurológica.</p>
                     </div>
                 </div>
                 <div class="boxRecursos">
@@ -79,8 +93,7 @@
                             <img src="img/vetorTreinos.png" alt="Icone de controle de video game">
                         </div>
                         <div class="divisao" style="background-color: #7485BF;"></div>
-                        <p>Desfrute de treinos personalizados que fortalecem o corpo e a mente, adaptados para suas
-                            necessidades específicas de saúde.</p>
+                        <p>Desfrute de treinos personalizados que fortalecem o corpo e a mente.</p>
                     </div>
                 </div>
                 <div class="boxRecursos">
@@ -93,8 +106,7 @@
                             <img src="img/vetorArtigos.png" alt="Icone de controle de video game">
                         </div>
                         <div class="divisao" style="background-color: #719257;"></div>
-                        <p>Explore artigos informativos e esclarecedores sobre a doença-alvo, oferecendo insights e
-                            orientações para o autocuidado.</p>
+                        <p>Explore artigos informativos e esclarecedores sobre a doença-alvo, oferecendo insights.</p>
                     </div>
                 </div>
                 <div class="boxRecursos">
@@ -107,14 +119,14 @@
                             <img src="img/vetorNewsletter.png" alt="Icone de controle de video game">
                         </div>
                         <div class="divisao" style="background-color: #E1374C;"></div>
-                        <p>Receba atualizações e dicas úteis sobre sua doença diretamente em sua caixa de entrada.
-                            Assine nossa newsletter para ficar por dentro das últimas notícias.</p>
+                        <p>Receba atualizações e dicas úteis sobre sua doença diretamente em sua caixa de entrada.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- CORES -->
-        <div class="coresDoenca">
+
+         <!-- CORES -->
+         <div class="coresDoenca">
 
             <div class="Doencas">
                 <div class="containerCores">
@@ -165,6 +177,7 @@
                 </div>
             </div>
         </div>
+
         <!-- AJUDA -->
         <div class="containerAjuda">
             <div class="boxAjuda">
@@ -173,7 +186,9 @@
                     <p>Nosso aplicativo oferece suporte inclusivo, conectando os idosos ao Centro de Valorização da Vida
                         (CVV), onde podem encontrar apoio emocional, conversar e buscar ajuda sempre que precisarem.
                         Estamos aqui para você, em todos os momentos.</p>
-                    <a href="https://cvv.org.br/" target="_blank">
+                        <p class="responsivo">  Suporte inclusivo com Centro de Valorização da Vida
+                            (CVV), onde podem encontrar apoio emocional.</p>
+                        <a href="https://cvv.org.br/" target="_blank">
                         <button>
                             <h1>188</h1>
                             <i class="fa-solid fa-phone-volume" style="color: #292C2E;"></i>
@@ -187,60 +202,9 @@
                 </div>
             </div>
         </div>
-        <!-- ACESSIVEL -->
-        <div class="containerAcessivel">
-            <div class="boxAcessivel">
-                <div class="imgAcessivel">
-                    <img src="img/imgAcessivel.png" alt="Pessoas mexendo no nosso aplicativo" style="width: 500px; ">
-                </div>
-                <div class="infosAcessiveis">
-                    <h1>Acessível em todos dispositivos <span>MÓVEIS</span></h1>
-                    <p>Nosso aplicativo é projetado para ser acessível a todos, oferecendo uma experiência amigável e
-                        adaptável para pessoas de todas as idades e habilidades. Em breve, estará disponível para
-                        download na Play Store, trazendo saúde e bem-estar para sua ponta dos dedos.</p>
-                    <div class="playStore">
-                        <img src="img/vetorPlayStore.png" alt="Icone da play store">
-                        <p>Play Store</p>
-                        <button>
-                            <h1>Disponível em breve</h1>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="containerNumeracaoDois" id="Sobre">
-                <div class="circuloCinza">
-                    <h1>2</h1>
-                </div>
-            </div>
-        </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer id="footer">
-        <div class="containerFooter">
-            <div class="infosFooter">
-                <div class="boxNavegacao">
-                    <nav class="nav">
-                        <a href="#Home">Home</a>
-                        <a href="#Recurso">Recursos</a>
-                        <a href="#Sobre">Sobre</a>
-                        <a href="mailto:vitamentall@gmail.com?subject=Dúvidas%20e%20Comentários">Fale conosco</a>
-                    </nav>
-                    <div class="redeSociais">
-                        <img src="img/iconeInstragram.png" alt="Icone do instragram">
-                        <p>Web-design feito por VitaMental</p>
-                    </div>
-                </div>
-                <a href="#Home">
-                    <div class="logoFooter">
-
-                        <img src="img/logo.png" alt="Logo VitaMental">
-                        <h1>VitaMental</h1>
-                    </div>
-            </div>
-            </a>
-        </div>
-    </footer>
+    
 </body>
 
 </html>
