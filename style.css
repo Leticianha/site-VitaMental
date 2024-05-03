@@ -1,36 +1,31 @@
 @font-face {
-    font-family: 'inter-black';
-    src: url(font/Inter/Inter-Black.ttf);
-}
-
-@font-face {
-    font-family: 'inter-regular';
+    font-family: 'Inter-Regular';
     src: url(font/Inter/Inter-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'inter-medium';
-    src: url(font/Inter/Inter-Medium.ttf);
+    font-family: 'Inter-Black';
+    src: url(font/Inter/Inter-Black.ttf);
 }
 
 @font-face {
-    font-family: 'inter-extraBold';
-    src: url(font/Inter/Inter-ExtraBold.ttf);
-}
-
-@font-face {
-    font-family: 'inter-light';
-    src: url(font/Inter/Inter-Light.ttf);
-}
-
-@font-face {
-    font-family: 'inter-bold';
+    font-family: 'Inter-Bold';
     src: url(font/Inter/Inter-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'inter-semiBold';
+    font-family: 'Inter-SemiBold';
     src: url(font/Inter/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url(font/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url(font/Inter/Inter-Light.ttf);
 }
 
 * {
@@ -44,57 +39,45 @@ a {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    /* Ativa o comportamento de rolagem suave para toda a página */
-}
-
-
-body {
-    background-color: #F9F9F9;
-}
-
-/* HEADER */
-.containerHeader {
+/* header */
+#header,
+#footer {
     background-color: #3C4146;
+}
+
+.containerHeader {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1% 5%;
 }
 
-.logo {
+.containerLogo {
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    width: 120px;
+.containerLogo img {
+    width: 100px;
     height: auto;
     padding-right: 5px;
 }
 
-.logo h1 {
-    font-family: 'inter-black';
+.containerLogo h1 {
+    font-family: 'Inter-Black';
     color: #fff;
     font-size: 30px;
 }
 
-.navegacao {
-    display: flex;
-    align-items: center;
-}
-
 #nav {
-    width: 250px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    width: 250px;
 }
 
 #nav a {
-    font-family: 'inter-regular';
-    font-size: 21px;
+    font-family: 'Inter-Regular';
+    font-size: 20px;
     color: #fff;
 }
 
@@ -106,13 +89,11 @@ body {
     display: none;
     position: absolute;
     top: 70px;
-    /* left: 10px; */
     right: 0;
-    background-color: #3c4146;
+    background-color: #fff;
     padding: 20px;
-    /* border: 1px solid #ccc; */
     width: 131px;
-    box-shadow: 0px 2px 20px 1px #616161;
+    box-shadow: 0px 2px 2px 1px #616161;
     border-bottom-left-radius: 25px 25px;
     border-bottom-right-radius: 25px 25px;
 }
@@ -123,28 +104,26 @@ body {
     text-decoration: none;
     font-family: 'inter-regular';
     font-size: 21px;
-    color: #fff;
-}
-
-.popup a:hover,
-#nav a:hover {
-    color: #b8b8b8;
-    /* Cor do texto ao passar o mouse */
+    color: #3C4146;
 }
 
 .close-btn {
     background: none;
     font-size: 25px;
-    color: #fff;
+    color: #3c4146;
     position: relative;
     left: 67px;
     bottom: 11px;
 }
 
-/* BANNER */
+/* main */
+#main {
+    background-color: #F9F9F9;
+}
+
 .containerBanner {
     background-color: #3C4146;
-    padding-bottom: 98px;
+    padding-bottom: 7%;
     border-bottom-left-radius: 550px 100px;
     border-bottom-right-radius: 550px 100px;
 }
@@ -154,17 +133,17 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 2%;
 }
 
 .textoBanner h1 {
     color: #fff;
-    font-family: 'inter-light';
+    font-family: 'Inter-Light';
     font-size: 45px;
 }
 
 .textoBanner h1 span {
-    font-family: 'inter-extraBold';
+    font-family: 'Inter-Bold';
 }
 
 .textoBanner p {
@@ -174,7 +153,7 @@ body {
 }
 
 .imgBanner img {
-    width: 430px;
+    width: 390px;
     height: auto;
 }
 
@@ -190,14 +169,14 @@ body {
 
 .linhaUm {
     position: absolute;
-    left: -46px;
-    bottom: 43px;
+    left: 0;
+    bottom: 10%;
 }
 
 .linhaDois {
     position: absolute;
     right: 0;
-    bottom: 38px;
+    bottom: 13%;
 }
 
 .containerNumeracao {
@@ -209,11 +188,25 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    bottom: -74px;
-    left: 690px;
+    bottom: 0;
+    left: 45%;
 }
 
-.circuloCinza {
+.containerNumeracaoDois {
+    background-color: #F9F9F9;
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 47%;
+    top: 288%;
+}
+
+.circuloCinza,
+.circuloCinzaDois {
     background-color: #3C4146;
     width: 95px;
     height: 95px;
@@ -223,15 +216,16 @@ body {
     align-items: center;
 }
 
-.containerNumeracao .circuloCinza h1 {
+.containerNumeracao .circuloCinza h1,
+.containerNumeracaoDois .circuloCinzaDois h1 {
     color: #F9F9F9;
     font-family: 'inter-black';
     font-size: 50px;
 }
 
-/* RECURSOS */
+/* recursos */
 .containerRecursos {
-    margin-top: 136px;
+    margin-top: 110px;
     text-align: center;
 }
 
@@ -244,7 +238,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 75px;
+    padding-top: 45px;
 }
 
 .boxRecursos {
@@ -372,25 +366,17 @@ body {
     text-align: center;
 }
 
-/* CORES */
-
-.coresDoenca {
-    display: grid;
-    align-content: space-between;
-    margin-top: 100px;
-}
-
-.containerCores {
-    font-family: 'inter-bold';
-    color: #1F2327;
-    display: grid;
-    justify-items: stretch;
-    justify-content: center;
-}
-
+/* cores */
 .cores {
-    display: flex;
-    justify-content: space-evenly;
+    margin: 4% 8%;
+}
+
+.containerCores h1 {
+    font-family: 'inter-bold';
+}
+
+.containerCores h2 {
+    display: none;
 }
 
 .containerCores p {
@@ -401,26 +387,24 @@ body {
     max-width: 920px;
 }
 
-.Doencas {
-    display: grid;
-    align-items: center;
+.containerTudoCores {
+    display: flex;
+    justify-content: space-around;
 }
 
 .boxDoenca {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 30px;
-    width: 460px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .tituloDoenca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 50px;
     border-radius: 20px;
-    padding: 13px 0;
-    width: 390px;
-    text-align: center;
-    box-shadow: 2px 3px 3px #3c41468e;
 }
 
 .tituloDoenca h1 {
@@ -454,11 +438,11 @@ body {
     height: auto;
 }
 
+/* cvv */
 .containerAjuda {
-
     margin-top: 50px;
-    margin-bottom: 90px;
-    display: grid;
+    margin-bottom: 140px;
+    display: flex;
     justify-content: center;
 }
 
@@ -481,7 +465,7 @@ body {
     text-align: left;
 }
 
-.infos h1 span {
+.app {
     font-family: 'inter-black';
 }
 
@@ -520,175 +504,165 @@ body {
     font-size: 20px;
 }
 
-/* RESPONSIVO */
+.responsivo {
+    display: none;
+}
+
+.img img {
+    width: 500px;
+}
+
+/* acesso */
+.containerAcesso {
+    display: flex;
+    background-color: #3C4146;
+    border-bottom-left-radius: 550px 100px;
+    border-bottom-right-radius: 550px 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 488px;
+    margin-bottom: 140px;
+}
+
+.boxTexto h1 {
+    color: #fff;
+    font-family: 'Inter-Light';
+    font-size: 35px;
+    width: 356px;
+}
+
+.boxTexto h1 span {
+    font-family: 'Inter-Bold';
+}
+
+.boxTexto p {
+    color: #fff;
+    font-family: 'inter-light';
+    font-size: 20px;
+    width: 468px;
+    text-align: justify;
+    margin: 21px 0;
+}
+
+.acessoImg img {
+    width: 500px;
+    height: auto;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+}
+
+.play img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.play h3 {
+    font-family: 'Inter-Light';
+    color: #fff;
+    margin-right: 50px;
+}
+
+.play button {
+    font-family: 'Inter-Medium';
+    color: #292c2ecf;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+/* footer */
+.containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.nav a {
+    font-family: 'Inter-Bold';
+    font-size: 20px;
+    color: #fff;
+}
+
+.redeSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+}
+
+.fa-instagram {
+    color: #fff;
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.icone h3 {
+    color: #fff;
+    font-family: 'Inter-Bold';
+}
+
+.web h3 {
+    font-family: 'Inter-Bold';
+    color: #ffffff98;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    padding-right: 5px;
+}
+
+.logo h1 {
+    font-family: 'Inter-Black';
+    color: #fff;
+    font-size: 30px;
+}
+
+/* responsivo */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .menu-bar {
-        display: none;
-    }
 
-    #nav {
-        background-color: green;
-    }
-
-    .imgBanner img {
-        width: 360px;
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 8%;
     }
 
     .banner {
         justify-content: space-evenly;
     }
 
+    .textoBanner h1 {
+        font-size: 42px;
+    }
+
     .textoBanner p {
-        font-size: 22px;
-    }
-
-    .linhaUm {
-        bottom: 99px;
-    }
-
-    .linhaDois {
-        bottom: 89px;
-    }
-
-    .containerNumeracao {
-        bottom: 0px;
-        left: 562px;
-    }
-
-    .Recursos {
-        padding: 75px 55px 0;
-    }
-
-    .boxRecursos {
-        width: 235px;
-        height: 320px;
-    }
-
-    .boxAjuda {
-        padding: 0px 26px;
-    }
-
-    .img img {
-        width: 400px;
-    }
-
-    .infos p {
-        display: hidden;
-    }
-
-    .boxAjuda {
-        padding: 0px 20px;
-    }
-}
-
-
-@media screen and (min-width: 900px) and (max-width: 1020px) {
-    .logo h1 {
-        font-size: 29px;
-    }
-
-    .logo img {
-        width: 118px;
-    }
-
-    #nav {
-        background-color: purple;
-    }
-
-    .menu-bar {
-        display: none;
+        font-size: 24px;
     }
 
     .imgBanner img {
-        width: 325px;
-    }
-
-    .textoBanner h1 {
-        font-size: 40px;
-    }
-
-    .textoBanner p {
-        font-size: 20px;
-    }
-
-    .linhas img {
-        width: 250px;
-    }
-
-    .linhaUm {
-        bottom: 131px;
-    }
-
-    .linhaDois {
-        bottom: 116px;
-    }
-
-    .containerNumeracao {
-        width: 100px;
-        height: 100px;
-        bottom: 50px;
-        left: 441px;
-    }
-
-    .circuloCinza {
-        width: 80px;
-        height: 80px;
-    }
-
-    .Recursos {
-        padding: 50px 50px;
-    }
-
-    .boxRecursos {
-        width: 190px;
-        height: 288px;
-    }
-
-    .containerCores p {
-        max-width: 840px;
-    }
-
-    .tituloDoenca {
-        width: 310px;
-    }
-
-    .cores {
-        justify-content: stretch;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 899px) {
-    .logo h1 {
-        font-size: 28px;
-    }
-
-    .logo img {
-        width: 111px;
-    }
-
-    #nav {
-        background-color: orange;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-
-    .banner {
-        justify-content: space-evenly;
-    }
-
-    .imgBanner img {
-        width: 290px;
-    }
-
-    .textoBanner h1 {
-        font-size: 35px;
-        width: 300px;
-    }
-
-    .textoBanner p {
-        font-size: 18px;
+        width: 330px;
     }
 
     .linhas img {
@@ -696,113 +670,97 @@ body {
     }
 
     .linhaUm {
-        bottom: 180px;
+        bottom: 4%;
     }
 
     .linhaDois {
-        bottom: 178px;
+        bottom: 8%;
     }
 
     .containerNumeracao {
-        width: 100px;
-        height: 100px;
-        bottom: 93px;
-        left: 404px;
+        bottom: -11%;
+        left: 46%;
     }
 
-    .circuloCinza {
-        width: 80px;
-        height: 80px;
+    .containerNumeracaoDois {
+        top: 315%;
+        left: 46%;
     }
 
-    .containerRecursos {
-        margin-top: 100px;
-    }
-
-    .Recursos {
-        display: flex;
-        overflow-x: auto;
-        /* Adiciona uma barra de rolagem horizontal quando necessário */
-        scroll-snap-type: x mandatory;
-        /* Força o scroll a parar em cada item */
-        -webkit-overflow-scrolling: touch;
-        /* Adiciona rolagem suave para dispositivos iOS */
-        padding-top: 75px;
-        margin-bottom: 20px;
-        /* Adicione margem inferior para evitar cortes */
-        margin-left: 64px;
-        margin-right: 17px;
-    }
-
+    /* recursos */
     .boxRecursos {
-        width: 209px;
-        height: 282px;
-        border: 2px solid #3c414667;
-        border-radius: 15px;
-        flex-shrink: 0;
-        /* Evita que os itens sejam reduzidos para caber */
-        margin-right: 50px;
-        /* Adiciona espaçamento entre os itens */
-        scroll-snap-align: start;
-        /* Define onde o scroll deve parar */
-        position: relative;
+        width: 197px;
+        height: 309px;
     }
 
-    .containerCores {
-        display: flex;
-        flex-direction: column;
-        margin-left: 70px;
-    }
-
-    .containerCores p {
-        max-width: 750px;
-    }
-
-    .tituloDoenca {
-        width: 245px;
+    /* cores */
+    .containerCores h2 {
+        display: none;
     }
 
     .cores {
-        justify-content: stretch;
+        margin: 4% 6%;
     }
 
-    .boxDoenca {
-        justify-content: center;
-        width: 430px;
+    .tituloDoenca {
+        width: 350px;
+    }
+
+    /* cvv */
+    .responsivo {
+        display: none;
+    }
+
+    .boxAjuda {
+        padding: 0 60px;
+    }
+
+    .img img {
+        width: 400px;
+    }
+
+    .infos p {
+        width: 295px;
+    }
+
+    .infos {
+        width: 345px;
+    }
+
+    /* acesso */
+    .acessoImg img {
+        width: 450px;
+        height: auto;
+    }
+
+    .boxTexto p {
+        width: 379px;
+        font-size: 17px;
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 767px) {
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+
+    /* header */
+    .containerLogo img,
+    .logo img {
+        width: 95px;
+    }
+
+    .containerLogo h1,
     .logo h1 {
         font-size: 27px;
     }
 
-    .logo img {
-        width: 105px;
+    #nav a,
+    .nav a {
+        font-size: 18px;
     }
 
-    #nav {
-        background-color: yellow;
-    }
-
-    .menu-bar {
-        display: none;
-    }
-
-    .linhas img {
-        width: 200px;
-    }
-
-    .linhaUm {
-        bottom: 200px;
-    }
-
-    .linhaDois {
-        bottom: 200px;
-    }
-
-    .imgBanner img {
-        width: 270px;
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 8%;
     }
 
     .banner {
@@ -810,267 +768,625 @@ body {
     }
 
     .textoBanner h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .textoBanner p {
-        font-size: 18px;
-        width: 295px;
+        font-size: 23px;
+        width: 290px;
+    }
+
+    .imgBanner img {
+        width: 300px;
+    }
+
+    .linhas img {
+        width: 200px;
+    }
+
+    .linhaUm {
+        bottom: 14%;
+    }
+
+    .linhaDois {
+        bottom: 17%;
     }
 
     .containerNumeracao {
         width: 100px;
         height: 100px;
-        bottom: 125px;
-        left: 355px;
+        bottom: 3%;
+        left: 45%;
     }
 
-    .circuloCinza {
+    .containerNumeracaoDois {
+        width: 100px;
+        height: 100px;
+        top: 297%;
+        left: 45%;
+    }
+
+    .circuloCinza,
+    .circuloCinzaDois {
         width: 80px;
         height: 80px;
     }
 
-    .Recursos {
-        display: flex;
-        overflow-x: auto;
-        /* Adiciona uma barra de rolagem horizontal quando necessário */
-        scroll-snap-type: x mandatory;
-        /* Força o scroll a parar em cada item */
-        -webkit-overflow-scrolling: touch;
-        /* Adiciona rolagem suave para dispositivos iOS */
-        padding-top: 75px;
-        margin-bottom: 20px;
-        /* Adicione margem inferior para evitar cortes */
-        margin-left: 64px;
-        margin-right: 64px;
+    .containerNumeracao .circuloCinza h1,
+    .containerNumeracaoDois .circuloCinzaDois h1 {
+        font-size: 45px;
     }
 
+    /* recursos */
     .boxRecursos {
-        width: 209px;
-        height: 282px;
-        border: 2px solid #3c414667;
-        border-radius: 15px;
-        flex-shrink: 0;
-        /* Evita que os itens sejam reduzidos para caber */
-        margin-right: 50px;
-        /* Adiciona espaçamento entre os itens */
-        scroll-snap-align: start;
-        /* Define onde o scroll deve parar */
-        position: relative;
+        width: 185px;
+        height: 270px;
     }
 
-    .cores {
-        display: flex;
-        /* justify-content: space-evenly; */
-        flex-direction: column;
+    .boxRecursos h1 {
+        font-size: 24px;
     }
 
-    .Doencas {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0 77px;
+    .boxRecursos p {
+        font-size: 16px;
     }
 
-    .tituloDoenca {
-        width: 320px;
+    .juncao img {
+        width: 48px;
+        margin-right: 0px;
     }
 
-    .boxDoenca {
-        justify-content: left;
-    }
-}
-
-
-@media screen and (min-width: 480px) and (max-width: 719px) {
-    .logo h1 {
-        font-size: 25px;
-    }
-
-    .logo img {
-        width: 100px;
-    }
-
-    #nav {
+    /* cores */
+    .containerCores h2 {
         display: none;
     }
 
-    .menu-bar {
-        display: block;
-        background-color: blue;
-    }
-
-    .menu-bar i {
-        color: #fff;
-        font-size: 30px;
-    }
-
-    .containerNumeracao {
-        display: none;
-    }
-
-    .imgBanner img {
-        width: 210px;
-    }
-
-    .textoBanner p {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .banner {
-        display: flex;
-        align-items: center;
-        padding-top: 30px;
-        flex-direction: column;
-    }
-
-    .textoBanner h1 {
-        font-size: 31px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .imgBanner img {
-        width: 250px;
-    }
-
-    .linhas img {
-        width: 250px;
-    }
-
-    .linhaUm {
-        bottom: 92px;
-    }
-
-    .linhaDois {
-        bottom: 92px;
-    }
-
-    .Recursos {
-        display: flex;
-        overflow-x: auto;
-        /* Adiciona uma barra de rolagem horizontal quando necessário */
-        scroll-snap-type: x mandatory;
-        /* Força o scroll a parar em cada item */
-        -webkit-overflow-scrolling: touch;
-        /* Adiciona rolagem suave para dispositivos iOS */
-        padding-top: 75px;
-        margin-bottom: 20px;
-        /* Adicione margem inferior para evitar cortes */
-        margin-left: 64px;
-        margin-right: 64px;
-    }
-
-    .boxRecursos {
-        width: 209px;
-        height: 282px;
-        border: 2px solid #3c414667;
-        border-radius: 15px;
-        flex-shrink: 0;
-        /* Evita que os itens sejam reduzidos para caber */
-        margin-right: 50px;
-        /* Adiciona espaçamento entre os itens */
-        scroll-snap-align: start;
-        /* Define onde o scroll deve parar */
-        position: relative;
-    }
-
     .cores {
-        display: flex;
-        /* justify-content: space-evenly; */
-        flex-direction: column;
+        margin: 4% 6%;
     }
 
-    .Doencas {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0 77px;
+    .containerCores h1 {
+        font-size: 28px;
     }
 
     .tituloDoenca {
         width: 300px;
     }
 
-    .boxDoenca {
-        justify-content: left;
+    .tituloDoenca h1 {
+        font-size: 18px;
     }
 
-    .coresDoenca {
-        margin-left: -50px;
+    /* cvv */
+    .boxAjuda {
+        padding: 0 50px;
+    }
+
+    .img img {
+        width: 350px;
+    }
+
+    .infos {
+        width: 345px;
+    }
+
+    .infos p {
+        width: 331px;
+    }
+
+    .responsivo {
+        display: none;
+    }
+
+    /* acesso */
+    .acessoImg img {
+        width: 350px;
+        height: auto;
+    }
+
+    .boxTexto p {
+        width: 379px;
+        font-size: 17px;
+    }
+
+    /* footer */
+    .fa-instagram {
+        font-size: 35px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 470px;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px) {
-    .logo h1 {
-        font-size: 24px;
-    }
+@media screen and (min-width: 768px) and (max-width: 900px) {
 
+    /* header */
+    .containerLogo img,
     .logo img {
         width: 90px;
     }
 
+    .containerLogo h1,
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    #nav a,
+    .nav a {
+        font-size: 17px;
+    }
+
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 8%;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .textoBanner h1 {
+        font-size: 35px;
+    }
+
+    .textoBanner p {
+        font-size: 22px;
+        width: 260px;
+    }
+
+    .imgBanner img {
+        width: 270px;
+    }
+
+    .linhas img {
+        width: 170px;
+    }
+
+    .linhaUm {
+        bottom: 22%;
+    }
+
+    .linhaDois {
+        bottom: 25%;
+    }
+
+    .containerNumeracao {
+        width: 100px;
+        height: 100px;
+        bottom: 12%;
+        left: 45%;
+    }
+
+    .containerNumeracaoDois {
+        width: 100px;
+        height: 100px;
+        left: 45%;
+        top: 340%;
+    }
+
+    .circuloCinza,
+    .circuloCinzaDois {
+        width: 80px;
+        height: 80px;
+    }
+
+    .containerNumeracao .circuloCinza h1,
+    .containerNumeracaoDois .circuloCinzaDois h1 {
+        font-size: 45px;
+    }
+
+    /* recursos */
+    .Recursos {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 111px;
+    }
+
+    .boxRecursos {
+        width: 185px;
+        height: 270px;
+        margin-bottom: 50px;
+    }
+
+    .boxRecursos h1 {
+        font-size: 24px;
+    }
+
+    .boxRecursos p {
+        font-size: 16px;
+    }
+
+    .juncao img {
+        width: 48px;
+        margin-right: 0px;
+    }
+
+    /* cores */
+    .containerCores h2 {
+        display: none;
+    }
+
+    .cores {
+        margin: 4% 6%;
+    }
+
+    .containerCores h1 {
+        font-size: 28px;
+    }
+
+    .tituloDoenca {
+        width: 250px;
+    }
+
+    .tituloDoenca h1 {
+        font-size: 17px;
+    }
+
+    /* cvv */
+    .boxAjuda {
+        padding: 0px 30px;
+        height: 364px;
+    }
+
+    .img img {
+        width: 340px;
+    }
+
+    .infos {
+        width: 345px;
+    }
+
+    .infos h1 {
+        font-size: 30px;
+    }
+
+    .infos p {
+        width: 290px;
+    }
+
+    .responsivo {
+        display: none;
+    }
+
+    /* acesso */
+    .acessoImg img {
+        width: 350px;
+        height: auto;
+    }
+
+    .boxTexto h1 {
+        font-size: 30px;
+    }
+
+    .boxTexto p {
+        width: 305px;
+        font-size: 17px;
+    }
+
+    .play h3 {
+        margin-right: 15px;
+    }
+
+    .play img {
+        margin-right: 5px;
+    }
+
+    /* footer */
+    .fa-instagram {
+        font-size: 35px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 450px;
+    }
+
+    .web h3,
+    .icone h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 768px) {
+
+    /* header */
+    .containerLogo img,
+    .logo img {
+        width: 90px;
+    }
+
+    .containerLogo h1,
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    #nav a,
+    .nav a {
+        font-size: 18px;
+    }
+
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 8%;
+    }
+
+    .banner {
+        justify-content: space-evenly;
+    }
+
+    .textoBanner h1 {
+        font-size: 34px;
+    }
+
+    .textoBanner p {
+        font-size: 20px;
+        width: 201px;
+    }
+
+    .imgBanner img {
+        width: 250px;
+    }
+
+    .linhas img {
+        width: 170px;
+    }
+
+    .linhaUm {
+        bottom: 27%;
+    }
+
+    .linhaDois {
+        bottom: 29%;
+    }
+
+    .containerNumeracao {
+        width: 90px;
+        height: 90px;
+        bottom: 16%;
+        left: 44%;
+    }
+
+    .containerNumeracaoDois {
+        width: 90px;
+        height: 90px;
+        top: 322%;
+        left: 45%;
+    }
+
+    .circuloCinza,
+    .circuloCinzaDois {
+        width: 70px;
+        height: 70px;
+    }
+
+    .containerNumeracao .circuloCinza h1,
+    .containerNumeracaoDois .circuloCinzaDois h1 {
+        font-size: 40px;
+    }
+
+    /* recursos */
+    .Recursos {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 111px;
+    }
+
+    .boxRecursos {
+        width: 185px;
+        height: 270px;
+        margin-bottom: 50px;
+    }
+
+    .boxRecursos h1 {
+        font-size: 24px;
+    }
+
+    .boxRecursos p {
+        font-size: 16px;
+    }
+
+    .juncao img {
+        width: 48px;
+        margin-right: 0px;
+    }
+
+    /* cores */
+    .containerCores h2 {
+        display: none;
+    }
+
+    .cores {
+        margin: 4% 6%;
+    }
+
+    .containerCores h1 {
+        font-size: 26px;
+    }
+
+    .containerCores p {
+        font-size: 16px;
+    }
+
+    .tituloDoenca {
+        width: 220px;
+    }
+
+    .tituloDoenca h1 {
+        font-size: 17px;
+    }
+
+    /* cvv */
+    .boxAjuda {
+        padding: 0px 30px;
+        height: 286px;
+    }
+
+    .img img {
+        width: 340px;
+    }
+
+    .infos {
+        width: 280px;
+    }
+
+    .infos h1 {
+        font-size: 30px;
+    }
+
+    .infos h1 span {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .responsivo {
+        display: block;
+    }
+
+    .infos p {
+        width: 290px;
+    }
+
+    .infos button {
+        padding: 0px 35px;
+        width: 156px;
+    }
+
+    .infos button h1 {
+        font-size: 22px;
+    }
+
+    /* acesso */
+    .containerAcesso {
+        height: 402px;
+        margin-bottom: 100px;
+    }
+
+    .acessoImg img {
+        width: 350px;
+        height: auto;
+    }
+
+    .boxTexto h1 {
+        font-size: 30px;
+    }
+
+    .boxTexto p {
+        width: 305px;
+        font-size: 17px;
+    }
+
+    .boxTexto p span {
+        display: none;
+    }
+
+    .play h3 {
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+    .play img {
+        margin-right: 5px;
+        width: 27px;
+    }
+
+    .play button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* footer */
+    .fa-instagram {
+        font-size: 30px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 410px;
+    }
+
+    .web h3,
+    .icone h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+
+    /* header */
+    .containerHeader {
+        padding: 3% 5%;
+    }
+
+    .containerLogo img,
+    .logo img {
+        width: 90px;
+    }
+
+    .containerLogo h1,
+    .logo h1 {
+        font-size: 25px;
+    }
+
     #nav {
         display: none;
     }
 
     .menu-bar {
         display: block;
-        background-color: pink;
-    }
-
-    .menu-bar i {
         color: #fff;
         font-size: 25px;
     }
 
-    .containerNumeracao {
-        display: none;
-    }
-
-    .containerNumeracao {
-        display: none;
-    }
-
-    .imgBanner img {
-        width: 210px;
-    }
-
-    .textoBanner p {
-        font-size: 18px;
-        margin-bottom: 10px;
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 10%;
     }
 
     .banner {
-        display: flex;
-        align-items: center;
-        padding-top: 30px;
         flex-direction: column;
+        padding-top: 4%;
+    }
+
+    .textoBanner {
+        align-items: center;
+    }
+
+    br {
+        display: none;
     }
 
     .textoBanner h1 {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 10px;
+        font-size: 33px;
+        width: 222px;
+    }
+
+    .textoBanner p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        width: 328px;
     }
 
     .imgBanner img {
-        width: 230px;
+        width: 270px;
     }
 
-    .linhas img {
-        width: 210px;
+    .linhas {
+        display: none;
     }
 
-    .linhaUm {
-        bottom: 128px;
+    .containerNumeracao {
+        display: none;
     }
 
-    .linhaDois {
-        bottom: 126px;
-    }
-
+    /* recursos */
     .Recursos {
         display: flex;
         overflow-x: auto;
@@ -1087,8 +1403,8 @@ body {
     }
 
     .boxRecursos {
-        width: 209px;
-        height: 282px;
+        width: 185px;
+        height: 270px;
         border: 2px solid #3c414667;
         border-radius: 15px;
         flex-shrink: 0;
@@ -1100,38 +1416,830 @@ body {
         position: relative;
     }
 
-    .containerRecursos {
-        margin-top: 65px;
+    .containerRecursos h1 {
+        font-size: 26px;
     }
 
-    .containerRecursos h1 {
-        font-size: 25px;
+    .boxRecursos h1 {
+        font-size: 20px;
+    }
+
+    .boxRecursos p {
+        font-size: 16px;
+    }
+
+    .containerRecursos {
+        margin-top: 80px;
+    }
+
+    .juncao img {
+        width: 48px;
+        margin-right: 0px;
+    }
+
+    /* cores */
+    .containerCores h2 {
+        display: block;
+        font-size: 26px;
+        font-family: 'inter-bold';
     }
 
     .cores {
-        display: flex;
-        /* justify-content: space-evenly; */
-        flex-direction: column;
+        margin: 7% 10%;
     }
 
-    .Doencas {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0 77px;
+    .containerCores h1 {
+        display: none;
+    }
+
+    .containerCores p {
+        font-size: 16px;
+    }
+
+    .containerCores p span {
+        display: none;
     }
 
     .tituloDoenca {
-        width: 300px;
+        width: 134px;
+        height: 40px;
+        border-radius: 15px;
     }
 
-    .boxDoenca {
-        justify-content: left;
-        width: 338px;
+    .tituloDoenca h1 {
+        font-size: 17px;
     }
 
-    .coresDoenca {
-        margin-left: -50px;
+    .tituloDoenca h1 span {
+        display: none;
     }
 
+    .imgDoenca {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    .imgDoenca h1 {
+        font-size: 20px;
+    }
+
+    /* cvv */
+    .boxAjuda {
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 400px;
+        border-radius: 40px;
+        align-content: center;
+        height: 470px;
+    }
+
+    .img img {
+        width: 333px;
+        margin-top: 30px;
+    }
+
+    .infos {
+        width: 280px;
+    }
+
+    .infos h1 {
+        font-size: 30px;
+    }
+
+    .infos h1 span {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .responsivo {
+        display: block;
+    }
+
+    .infos p {
+        width: 290px;
+    }
+
+    .infos button {
+        padding: 0px 35px;
+        width: 156px;
+    }
+
+    .infos button h1 {
+        font-size: 22px;
+    }
+
+    /* acesso */
+    .containerNumeracaoDois {
+        display: none;
+    }
+
+    .containerAcesso {
+        height: 475px;
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .acessoImg img {
+        width: 305px;
+        height: auto;
+    }
+
+    .boxTexto h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .boxTexto p {
+        width: 336px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .boxTexto p span {
+        display: none;
+    }
+
+    .play {
+        display: none;
+    }
+
+    /* footer */
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .fa-instagram {
+        font-size: 25px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 120px;
+    }
+
+    .web h3,
+    .icone h1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* header */
+    .containerHeader {
+        padding: 3% 5%;
+    }
+
+    .containerLogo img,
+    .logo img {
+        width: 80px;
+    }
+
+    .containerLogo h1 {
+        font-size: 20px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .popup {
+        padding: 14px;
+        width: 130px;
+    }
+
+    .popup a {
+        font-size: 20px;
+    }
+
+    .close-btn {
+        left: 76px;
+        bottom: 0px;
+    }
+
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 15%;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding-top: 4%;
+    }
+
+    .textoBanner {
+        align-items: center;
+    }
+
+    br {
+        display: none;
+    }
+
+    .textoBanner h1 {
+        font-size: 30px;
+        width: 222px;
+        margin-bottom: 30px;
+    }
+
+    .textoBanner p {
+        display: none;
+    }
+
+    .imgBanner img {
+        width: 270px;
+    }
+
+    .linhas {
+        display: none;
+    }
+
+    .containerNumeracao {
+        display: none;
+    }
+
+    /* recursos */
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 83px;
+        margin-right: 64px;
+    }
+
+    .boxRecursos {
+        width: 165px;
+        height: 260px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .containerRecursos h1 {
+        font-size: 24px;
+        width: 276px;
+        margin-left: 9%;
+    }
+
+    .containerRecursos {
+        margin-top: 67px;
+    }
+
+    .boxRecursos h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .boxRecursos p {
+        font-size: 15px;
+    }
+
+    .boxRecursos img {
+        width: 135px;
+        height: auto;
+    }
+
+    .boxDentro img {
+        display: none;
+    }
+
+    /* cores */
+    .containerCores h2 {
+        display: block;
+        font-size: 26px;
+        font-family: 'inter-bold';
+    }
+
+    .cores {
+        margin: 10% 19%;
+    }
+
+    .containerCores h1 {
+        display: none;
+    }
+
+    .containerCores p {
+        font-size: 16px;
+    }
+
+    .containerCores p span {
+        display: none;
+    }
+
+    .containerTudoCores {
+        flex-wrap: wrap;
+    }
+
+    .tituloDoenca {
+        width: 134px;
+        height: 30px;
+        border-radius: 12px;
+    }
+
+    .tituloDoenca h1 {
+        font-size: 15px;
+    }
+
+    .tituloDoenca h1 span {
+        display: none;
+    }
+
+    .imgDoenca {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .imgDoenca h1 {
+        font-size: 16px;
+    }
+
+    /* cvv */
+    .containerAjuda {
+        margin-bottom: 100px;
+    }
+
+    .boxAjuda {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 289px;
+        border-radius: 40px;
+        align-content: center;
+        height: 441px;
+    }
+
+    .img img {
+        width: 280px;
+        margin-top: 30px;
+    }
+
+    .infos h1 {
+        font-size: 25px;
+    }
+
+    .infos h1 span {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .responsivo {
+        display: block;
+    }
+
+    .infos p {
+        width: 227px;
+        font-size: 16px;
+    }
+
+    .infos button {
+        padding: 0px 22px;
+        width: 121px;
+    }
+
+    .infos button h1 {
+        font-size: 18px;
+        width: 20px;
+    }
+
+    .infos button i {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    /* acesso */
+    .containerNumeracaoDois {
+        display: none;
+    }
+
+    .containerAcesso {
+        height: 410px;
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .acessoImg img {
+        width: 245px;
+        height: auto;
+    }
+
+    .boxTexto h1 {
+        font-size: 25px;
+        text-align: center;
+        width: 330px;
+    }
+
+    .boxTexto h1 span {
+        display: none;
+    }
+
+    .boxTexto p {
+        width: 270px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .boxTexto p span {
+        display: none;
+    }
+
+    .play {
+        display: none;
+    }
+
+    /* footer */
+    .logo h1 {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .fa-instagram {
+        font-size: 25px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 115px;
+    }
+
+    .web h3,
+    .icone h1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 320px) {
+
+    /* header */
+    .containerHeader {
+        padding: 3% 5%;
+    }
+
+    .containerLogo img,
+    .logo img {
+        width: 70px;
+    }
+
+    .containerLogo h1 {
+        font-size: 20px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .popup {
+        padding: 10px;
+        width: 119px;
+    }
+
+    .popup a {
+        font-size: 18px;
+    }
+
+    .close-btn {
+        font-size: 20px;
+        bottom: 0px;
+        left: 76px;
+    }
+
+    /* main */
+    /* banner */
+    .containerBanner {
+        padding-bottom: 15%;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding-top: 4%;
+    }
+
+    .textoBanner {
+        align-items: center;
+    }
+
+    br {
+        display: none;
+    }
+
+    .textoBanner h1 {
+        font-size: 25px;
+        width: 222px;
+        margin-bottom: 30px;
+    }
+
+    .textoBanner p {
+        display: none;
+    }
+
+    .imgBanner img {
+        width: 200px;
+    }
+
+    .linhas {
+        display: none;
+    }
+
+    .containerNumeracao {
+        display: none;
+    }
+
+    /* recursos */
+    .Recursos {
+        display: flex;
+        overflow-x: auto;
+        /* Adiciona uma barra de rolagem horizontal quando necessário */
+        scroll-snap-type: x mandatory;
+        /* Força o scroll a parar em cada item */
+        -webkit-overflow-scrolling: touch;
+        /* Adiciona rolagem suave para dispositivos iOS */
+        margin-bottom: 20px;
+        /* Adicione margem inferior para evitar cortes */
+        margin-left: 72px;
+        margin-right: 64px;
+    }
+
+    .boxRecursos {
+        width: 165px;
+        height: 260px;
+        border: 2px solid #3c414667;
+        border-radius: 15px;
+        flex-shrink: 0;
+        /* Evita que os itens sejam reduzidos para caber */
+        margin-right: 50px;
+        /* Adiciona espaçamento entre os itens */
+        scroll-snap-align: start;
+        /* Define onde o scroll deve parar */
+        position: relative;
+    }
+
+    .containerRecursos h1 {
+        font-size: 24px;
+        width: 249px;
+        margin-left: 25px;
+    }
+
+    .containerRecursos {
+        margin-top: 67px;
+    }
+
+    .boxRecursos h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .boxRecursos p {
+        font-size: 15px;
+    }
+
+    .boxRecursos img {
+        width: 135px;
+        height: auto;
+    }
+
+    .boxDentro img {
+        display: none;
+    }
+
+    /* cores */
+    .containerCores h2 {
+        display: block;
+        font-size: 26px;
+        font-family: 'inter-bold';
+    }
+
+    .cores {
+        margin: 10% 19%;
+    }
+
+    .containerCores h1 {
+        display: none;
+    }
+
+    .containerCores p {
+        font-size: 15px;
+    }
+
+    .containerCores p span {
+        display: none;
+    }
+
+    .containerCores h1 {
+        display: none;
+    }
+
+    .containerCores p {
+        font-size: 16px;
+    }
+
+    .containerCores p span {
+        display: none;
+    }
+
+    .containerTudoCores {
+        flex-wrap: wrap;
+    }
+
+    .tituloDoenca {
+        width: 134px;
+        height: 30px;
+        border-radius: 12px;
+    }
+
+    .tituloDoenca h1 {
+        font-size: 15px;
+    }
+
+    .tituloDoenca h1 span {
+        display: none;
+    }
+
+    .imgDoenca {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .imgDoenca h1 {
+        font-size: 16px;
+    }
+
+    /* cvv */
+    .containerAjuda {
+        margin-bottom: 85px;
+    }
+
+    .boxAjuda {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 240px;
+        border-radius: 40px;
+        align-content: center;
+        height: 410px;
+    }
+
+    .img img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .infos h1 {
+        font-size: 23px;
+        width: 182px;
+    }
+
+    .infos h1 span {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .responsivo {
+        display: block;
+    }
+
+    .infos p {
+        width: 177px;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .infos button {
+        padding: 0px 22px;
+        width: 121px;
+        margin-top: 10px;
+    }
+
+    .infos button h1 {
+        font-size: 18px;
+        width: 20px;
+    }
+
+    .infos button i {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+     /* acesso */
+     .containerNumeracaoDois {
+        display: none;
+    }
+
+    .containerAcesso {
+        height: 410px;
+        margin-bottom: 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .acessoImg img {
+        width: 208px;
+        height: auto;
+    }
+
+    .boxTexto h1 {
+        font-size: 23px;
+        text-align: center;
+        width: 276px;
+        margin-left: 14px;
+    }
+
+    .boxTexto h1 span {
+        display: none;
+    }
+
+    .boxTexto p {
+        width: 248px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 19px;
+    }
+
+    .boxTexto p span {
+        display: none;
+    }
+
+    .play {
+        display: none;
+    }
+
+    /* footer */
+    .logo h1 {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .fa-instagram {
+        font-size: 25px;
+    }
+
+    .nav,
+    .redeSocial {
+        width: 115px;
+    }
+
+    .web h3,
+    .icone h1 {
+        display: none;
+    }
 }

@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logoFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4e1ef735b.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <title>Document</title>
+    <title>VitaMental</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- header -->
     <header id="header">
-        <div class="containerHeader" id="Home">
-            <div class="logo">
+        <div class="containerHeader">
+            <div class="containerLogo">
                 <img src="img/logo.png" alt="Logo VitaMental">
                 <h1>VitaMental</h1>
             </div>
-            <div class="navegacao">
-                <nav id="nav">
-                    <a href="#Home">Home</a>
-                    <a href="#Recurso">Recursos</a>
-                    <a href="#Sobre">Sobre</a>
-                </nav>
-                <!-- Ícone do menu-bar -->
-                <div class="menu-bar" onclick="openMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+            <nav id="nav">
+                <a href="#header">Home</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
 
-                <!-- Popup -->
-                <div class="popup" id="popup">
-                    <button class="close-btn" onclick="closeMenu()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <a href="#Home">Home</a>
-                    <a href="#Recurso">Recursos</a>
-                    <a href="#Sobre">Sobre</a>
-                </div>
+            <div class="menu-bar" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="popup" id="popup">
+                <button class="close-btn" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="#home">Home</a>
+                <a href="#recurso">Recursos</a>
+                <a href="#sobre">Sobre</a>
             </div>
         </div>
     </header>
 
+    <!-- main -->
     <main id="main">
-        <!-- BANNER -->
+
+        <!-- banner -->
         <div class="containerBanner">
             <div class="banner">
                 <div class="textoBanner">
@@ -66,8 +66,8 @@
             </div>
         </div>
 
-        <!-- RECURSOS -->
-        <div class="containerRecursos">
+        <!-- recursos -->
+        <div class="containerRecursos" id="recursos">
             <h1>Confira nossos recursos</h1>
             <div class="Recursos">
                 <div class="boxRecursos">
@@ -125,68 +125,69 @@
             </div>
         </div>
 
-         <!-- CORES -->
-         <div class="coresDoenca">
-
-            <div class="Doencas">
-                <div class="containerCores">
-                    <h1>Porque essas <span style="color: #B38BDB;">c</span><span style="color: #7485BF;">o</span><span
-                            style="color: #719257;">r</span><span style="color: #E1374C;">e</span><span
-                            style="color: #3C4146;">s</span>?</h1>
-                    <p>Essas são as cores oficiais de cada doença-alvo do app, no entanto na contemporaneidade essas não
-                        são
-                        ainda associadas a essas patologias, por isso as trouxemos para trazer visibilidade a elas.</p>
-                </div>
-                <div class="cores">
-                    <div class="containerDoenca">
-                        <div class="boxDoenca">
-                            <div class="imgDoenca">
-                                <h1>1</h1>
-                            </div>
-                            <div class="tituloDoenca" style="background-color: #B38BDB;">
-                                <h1>Alzheimer</h1>
-                            </div>
+        <!-- cores -->
+        <div class="cores">
+            <div class="containerCores">
+                <h1>Porque essas <span style="color: #B38BDB;">c</span><span style="color: #7485BF;">o</span><span
+                        style="color: #719257;">r</span><span style="color: #E1374C;">e</span><span
+                        style="color: #3C4146;">s</span>?</h1>
+                <h2>
+                    <span style="color: #B38BDB;">C</span><span style="color: #7485BF;">o</span><span
+                        style="color: #719257;">r</span><span style="color: #E1374C;">e</span><span
+                        style="color: #3C4146;">s</span>
+                </h2>
+                <p>Essas são as cores oficiais de cada doença-alvo do app <span>, no entanto na contemporaneidade essas não são
+                    ainda associadas a essas patologias, por isso as trouxemos para trazer visibilidade a elas.</span></p>
+            </div>
+            <div class="containerTudoCores">
+                <div class="boxCores">
+                    <div class="boxDoenca">
+                        <div class="imgDoenca">
+                            <h1>1</h1>
                         </div>
-                        <div class="boxDoenca">
-                            <div class="imgDoenca">
-                                <h1>3</h1>
-                            </div>
-                            <div class="tituloDoenca" style="background-color: #719257;">
-                                <h1>Esquizofrenia</h1>
-                            </div>
+                        <div class="tituloDoenca" style="background-color: #B38BDB;">
+                            <h1>Alzheimer</h1>
                         </div>
                     </div>
-                    <div class="containerDoenca">
-                        <div class="boxDoenca">
-                            <div class="imgDoenca">
-                                <h1>2</h1>
-                            </div>
-                            <div class="tituloDoenca" style="background-color: #7485BF;">
-                                <h1>AVC</h1>
-                            </div>
+                    <div class="boxDoenca">
+                        <div class="imgDoenca">
+                            <h1>3</h1>
                         </div>
-                        <div class="boxDoenca">
-                            <div class="imgDoenca">
-                                <h1>4</h1>
-                            </div>
-                            <div class="tituloDoenca" style="background-color: #E1374C;">
-                                <h1>Mal de Parkinson</h1>
-                            </div>
+                        <div class="tituloDoenca" style="background-color: #719257;">
+                            <h1>Esquizofrenia</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxCores">
+                    <div class="boxDoenca">
+                        <div class="imgDoenca">
+                            <h1>2</h1>
+                        </div>
+                        <div class="tituloDoenca" style="background-color: #7485BF;">
+                            <h1>AVC</h1>
+                        </div>
+                    </div>
+                    <div class="boxDoenca">
+                        <div class="imgDoenca">
+                            <h1>4</h1>
+                        </div>
+                        <div class="tituloDoenca" style="background-color: #E1374C;">
+                            <h1><span>Mal de</span> Parkinson</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- AJUDA -->
+        <!-- cvv -->
         <div class="containerAjuda">
             <div class="boxAjuda">
                 <div class="infos">
-                    <h1>Encontre ajuda em nosso <span>APP</span></h1>
-                    <p>Nosso aplicativo oferece suporte inclusivo, conectando os idosos ao Centro de Valorização da Vida
+                    <h1>Encontre ajuda <span>em nosso <span class="app">APP</span></span></h1>
+                    <p class="desktop">Nosso aplicativo oferece suporte inclusivo, conectando os idosos ao Centro de Valorização da Vida
                         (CVV), onde podem encontrar apoio emocional, conversar e buscar ajuda sempre que precisarem.
                         Estamos aqui para você, em todos os momentos.</p>
-                        <p class="responsivo">  Suporte inclusivo com Centro de Valorização da Vida
+                        <p class="responsivo">  Suporte inclusivo <span></span> com Centro de Valorização da Vida
                             (CVV), onde podem encontrar apoio emocional.</p>
                         <a href="https://cvv.org.br/" target="_blank">
                         <button>
@@ -198,13 +199,63 @@
                 <div class="img">
                     <img src="img/psicologia 1.png"
                         alt="AmbulÂncia com uma enfermeira levando uma idosa que está na cadeira de rodas"
-                        style="width: 500px;">
+                        >
+                </div>
+            </div>
+        </div>
+
+        <!-- acesso -->
+        <div class="containerNumeracaoDois" id="sobre">
+            <div class="circuloCinzaDois">
+                <h1>2</h1>
+            </div>
+        </div>
+        <div class="containerAcesso">
+            <div class="acessoImg">
+                <img src="img/imgAcessivel.png" alt="Imagem mostrando nosso App em um celular">
+            </div>
+            <div class="acessoTexto">
+                <div class="boxTexto">
+                    <h1>Acessível em todos dispositivos <span class="acesso">MÓVEIS</span></h1>
+                    <p>Em breve, estará disponível na Play Store, proporcionando acesso fácil a recursos personalizados de bem-estar mental e físico. <span>Prepare-se para uma jornada de autocuidado e melhoria da qualidade de vida, com o Vitamental ao seu alcance, a qualquer momento e em qualquer lugar.</span></p>
+                </div>
+                <div class="play">
+                    <img src="img/vetorPlayStore.png" alt="Icone da play store">
+                    <h3>Play Store</h3>
+                    <button>Disponível em breve</button>
                 </div>
             </div>
         </div>
     </main>
 
-    
+    <!-- footer -->
+    <footer id="footer">
+        <div class="containerFooter">
+            <div class="containerRedeSocial">
+                <nav class="nav">
+                    <a href="#header">Home</a>
+                    <a href="#recursos">Recursos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#">Fale conosco</a>
+                </nav>
+                <div class="redeSocial">
+                    <div class="icone">
+                        <a href="https://www.instagram.com/vita_mental/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <h3>VitaMental</h3>
+                    </div>
+                    <div class="web">
+                        <h3>Web-design feito por VitaMental</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo VitaMental">
+                <h1>VitaMental</h1>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
